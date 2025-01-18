@@ -1,6 +1,8 @@
 import type {Metadata} from 'next';
 import {Metal} from 'next/font/google';
 import './globals.css';
+import Header from '@/components/shared/Header/Header';
+import Footer from '@/components/shared/Footer/Footer';
 
 const metalSans = Metal({
   subsets: ['latin'],
@@ -19,7 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${metalSans.className} antialiased`}>{children}</body>
+      <body className={`${metalSans.className} antialiased`}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
