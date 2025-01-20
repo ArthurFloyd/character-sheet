@@ -1,8 +1,44 @@
-.image {
-  // width: 300px;
-  // height: 300px;
+.c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  border-radius: 20px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  // border: 2px solid rgb(209, 205, 203);
 }
-
-.text {
-  font-size: 32px;
+.container {
+}
+.card {
+  background-color: rgb(35, 43, 47);
+  // opacity: 0;
+}
+.content {
+  color: white;
+  // padding: 16px;
+}
+.image {
+  width: 100%;
+  height: auto;
+}
+.brg__button {
+  border-radius: 0px 0px 10px 10px;
+  width: 100%;
+  background-color: white;
+}
+.button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  // margin-top: auto;
+  padding: 8px;
+  .text {
+    color: black;
+    font-size: 1em;
+  }
+  .arrow {
+    color: rgba(0, 0, 0, 0.54);
+    width: 1rem;
+  }
 }

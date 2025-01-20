@@ -1,10 +1,10 @@
 import type {Metadata} from 'next';
-import {Metal} from 'next/font/google';
+import {Roboto} from 'next/font/google';
 import './globals.css';
 import Header from '@/components/shared/Header/Header';
 import Footer from '@/components/shared/Footer/Footer';
 
-const metalSans = Metal({
+const metalSans = Roboto({
   subsets: ['latin'],
   weight: ['400'],
 });
