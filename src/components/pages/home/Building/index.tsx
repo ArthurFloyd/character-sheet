@@ -21,37 +21,42 @@ const Building = () => {
   function getRandomArbitrary(min, max) {
     return Math.random() * (max - min) + min;
   }
-  console.log('s', buildingImages[getRandomArbitrary(1, 5)]);
-  console.log('ss', Math.floor(getRandomArbitrary(0, 4)));
+
   return (
-    <div className={s.c}>
-      <Link className={s.container} href="/characters/builder">
-        <Card sx={{maxWidth: 445}} className={s.card}>
-          <CardActionArea className={s.image}>
-            <Image
-              aria-hidden
-              src={buildingImages[Math.floor(getRandomArbitrary(0, 4))]}
-              alt="create characters"
-              // width="100%"
-              // height="100%"
-            />
-            <CardContent className={s.content}>
-              <Typography gutterBottom variant="h5" component="div">
-                Классика
-              </Typography>
-              <Typography variant="body2">
-                Создай персоонажа используя пошаговый подход
-              </Typography>
-            </CardContent>
+    <div>
+      <div className={s.text}>
+        <h1>Mетод создания персоонажа</h1>
+        <p>Выбирите как вы хотите создать своего персоонажа</p>
+      </div>
+      <div className={s.c}>
+        <Link className={s.container} href="/builder">
+          <Card sx={{maxWidth: 445}} className={s.card}>
+            <CardActionArea className={s.image}>
+              <Image
+                aria-hidden
+                src={buildingImages[Math.floor(getRandomArbitrary(0, 4))]}
+                alt="create characters"
+                // width="100%"
+                // height="100%"
+              />
+              <CardContent className={s.content}>
+                <Typography gutterBottom variant="h5" component="div">
+                  Классика
+                </Typography>
+                <Typography variant="body2">
+                  Создай персоонажа используя пошаговый подход
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+          <CardActionArea className={s.brg__button}>
+            <div className={s.button}>
+              <Typography className={s.text}>Создать</Typography>
+              <ArrowForwardIosOutlinedIcon className={s.arrow} />
+            </div>
           </CardActionArea>
-        </Card>
-        <CardActionArea className={s.brg__button}>
-          <div className={s.button}>
-            <Typography className={s.text}>Создать</Typography>
-            <ArrowForwardIosOutlinedIcon className={s.arrow} />
-          </div>
-        </CardActionArea>
-      </Link>
+        </Link>
+      </div>
     </div>
   );
 };

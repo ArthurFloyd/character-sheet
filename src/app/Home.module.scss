@@ -1,0 +1,36 @@
+.home {
+  display: grid;
+  grid-template-rows: 20px 1fr 20px;
+  align-items: center;
+  justify-items: center;
+  min-height: 100vh;
+  padding: 2rem 2rem 5rem;
+  gap: 4rem;
+  font-family: var(--font-geist-sans);
+
+  @media (min-width: 640px) {
+    padding: 5rem;
+  }
+}
+.home__text {
+  margin-top: 200px;
+  text-align: center;
+  // font-weight: bold;
+  // color: ;
+  // font-size: 36px;
+}
+
+.text {
+  color: #666666;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .main_content {
+    flex: 1;
+    padding: 20px;
+  }
+}

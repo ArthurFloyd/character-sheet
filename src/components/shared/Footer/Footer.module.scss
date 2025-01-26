@@ -1,7 +1,14 @@
 .footer {
-  display: block;
-  width: 100%;
-  height: auto;
-  background-color: grey;
-  position: relative;
+  background-color: #1a1a1a;
+  color: #b8b8b8;
+  text-align: center;
+  padding: 20px 0;
+  a {
+    color: #b8b8b8;
+    text-decoration: none;
+    transition: color 0.3s;
+    &:hover {
+      color: #f5f5f5;
+    }
+  }
 }

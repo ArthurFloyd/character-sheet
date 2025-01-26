@@ -1,4 +1,5 @@
 .c {
+  // border: 2px solid rgb(209, 205, 203);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,9 +7,8 @@
   position: absolute;
   border-radius: 20px;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
-  // border: 2px solid rgb(209, 205, 203);
 }
-.container {
+.text {
 }
 .card {
   background-color: rgb(35, 43, 47);
@@ -16,6 +16,7 @@
 }
 .content {
   color: white;
+  background-color: rgb(35, 43, 47);
   // padding: 16px;
 }
 .image {
