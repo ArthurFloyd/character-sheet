@@ -6,7 +6,6 @@ const Header = () => {
   return (
     <header className={s.header}>
       <nav className={s.container}>
-        {/* <div className={s.nav}> */}
         <Link className={s.logo} href="/">
           HeroMaker
         </Link>
@@ -18,7 +17,6 @@ const Header = () => {
             <Link href="/profile">Личный кабинет</Link>
           </li>
         </ol>
-        {/* </div> */}
       </nav>
     </header>
   );
