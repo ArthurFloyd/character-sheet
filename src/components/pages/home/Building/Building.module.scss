@@ -1,45 +1,17 @@
-.c {
-  // border: 2px solid rgb(209, 205, 203);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: absolute;
-  border-radius: 20px;
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
-}
-.text {
-}
-.card {
-  background-color: rgb(35, 43, 47);
-  // opacity: 0;
-}
-.content {
-  color: white;
-  background-color: rgb(35, 43, 47);
-  // padding: 16px;
-}
-.image {
-  width: 100%;
-  height: auto;
-}
-.brg__button {
-  border-radius: 0px 0px 10px 10px;
-  width: 100%;
-  background-color: white;
-}
-.button {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  // margin-top: auto;
-  padding: 8px;
-  .text {
-    color: black;
-    font-size: 1em;
-  }
-  .arrow {
-    color: rgba(0, 0, 0, 0.54);
-    width: 1rem;
-  }
+.container {
+  // flex: 1;
+  display: grid;
+  // grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+
+  grid-template-rows: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Адаптивные колонки */
+  grid-template-columns: repeat(2, auto); /* Два ряда */
+
+  gap: 20px;
+  padding: 20px;
+
+  // max-width: 1200px;
+  margin: 0 auto;
 }

@@ -1,3 +1,3 @@
 export default function Page() {
-  return <div>builder</div>;
+  return <div>builder soon</div>;
 }
