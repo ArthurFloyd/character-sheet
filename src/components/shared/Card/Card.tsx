@@ -33,34 +33,38 @@ const Card = ({
 }: CardProps) => {
   return (
     <div className={s.container}>
-      <Link className={s.content} href={pathRouter}>
-        <MuiCard className={s.card}>
-          <CardActionArea className={s.image}>
-            {image ? (
-              <Image
-                aria-hidden
-                src={image}
-                alt={alt}
-                // layout="intrinsic"
-                // width={600}
-                // height={400}
-              />
-            ) : null}
+      <Link href={pathRouter} legacyBehavior>
+        <a className={s.content}>
+          {/* <div> */}
+          <MuiCard className={s.card}>
+            <CardActionArea className={s.image}>
+              {image ? (
+                <Image
+                  aria-hidden
+                  src={image}
+                  alt={alt}
+                  // layout="intrinsic"
+                  // width={600}
+                  // height={400}
+                />
+              ) : null}
 
-            <CardContent className={s.content}>
-              <Typography gutterBottom variant="h5" component="div">
-                {title}
-              </Typography>
-              <Typography variant="body2">{description}</Typography>
-            </CardContent>
+              <CardContent className={s.content}>
+                <Typography gutterBottom variant="h5" component="div">
+                  {title}
+                </Typography>
+                <Typography variant="body2">{description}</Typography>
+              </CardContent>
+            </CardActionArea>
+          </MuiCard>
+          <CardActionArea className={s.brg__button}>
+            <div className={s.button}>
+              <Typography className={s.text}>{textButton}</Typography>
+              <ArrowForwardIosOutlinedIcon className={s.arrow} />
+            </div>
           </CardActionArea>
-        </MuiCard>
-        <CardActionArea className={s.brg__button}>
-          <div className={s.button}>
-            <Typography className={s.text}>{textButton}</Typography>
-            <ArrowForwardIosOutlinedIcon className={s.arrow} />
-          </div>
-        </CardActionArea>
+          {/* </div> */}
+        </a>
       </Link>
     </div>
   );

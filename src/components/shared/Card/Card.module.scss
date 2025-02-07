@@ -1,45 +1,27 @@
 .container {
-  // border: 2px solid rgb(209, 205, 203);
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // flex-direction: column;
-  // position: absolute;
-  // width: 100%;
-  // height: auto;
-
-  // border-radius: 20px;
-  // box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
-
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
+  // padding-left: 16px;
+  // height: 100%;
 
-  .container:hover {
+  &:hover {
     transform: translateY(-10px); /* Лёгкая анимация при наведении */
   }
 
-  // .container img {
-  //   width: 100%;
-  //   height: auto;
-  //   display: block;
-  // }
-
-  // .card {
-  //   background-color: rgb(35, 43, 47);
-  //   // opacity: 0;
-  // }
   .content {
     color: white;
     background-color: rgb(35, 43, 47);
     // padding: 16px;
   }
-  .image {
-    width: 100%;
+  img {
+    // width: 100%;
+    max-width: 100%;
     height: auto;
-    display: block;
+    // height: 200px;
+    // display: block;
   }
   .brg__button {
     border-radius: 0px 0px 10px 10px;

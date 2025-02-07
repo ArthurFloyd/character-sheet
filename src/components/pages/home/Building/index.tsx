@@ -1,4 +1,4 @@
-// 'use client';
+'use client';
 
 import s from './Building.module.scss';
 
@@ -21,14 +21,15 @@ import charactersParty1 from '@/public/images/charactersParty1.jpeg';
 const Building = () => {
   // const cardImage = buildingImages[Math.floor(getRandomArbitrary(0, 4))];
   return (
-    <div>
-      <div>
-        <div className={s.text}>
-          <h1>Mетод создания персоонажа</h1>
-          <p>Выбирите как вы хотите создать своего персоонажа</p>
-        </div>
-        <div className={s.container}>
-          <div>
+    <div className={s.building__page}>
+      <div className={s.container}>
+        {/* <div className={s.text}> */}
+        <h1>Mетод создания персоонажа</h1>
+        <p>Выбирите как вы хотите создать своего персоонажа</p>
+        {/* </div> */}
+        {/* <div className={s.containe}> */}
+        <div className={s.card}>
+          <div className={s.content}>
             <Card
               image={charactersParty1}
               title={'Классика'}
@@ -71,6 +72,7 @@ const Building = () => {
         </div>
       </div>
     </div>
+    // </div>
   );
 };
 
