@@ -35,19 +35,9 @@ const Card = ({
     <div className={s.container}>
       <Link href={pathRouter} legacyBehavior>
         <a className={s.content}>
-          {/* <div> */}
           <MuiCard className={s.card}>
             <CardActionArea className={s.image}>
-              {image ? (
-                <Image
-                  aria-hidden
-                  src={image}
-                  alt={alt}
-                  // layout="intrinsic"
-                  // width={600}
-                  // height={400}
-                />
-              ) : null}
+              {image ? <Image aria-hidden src={image} alt={alt} /> : null}
 
               <CardContent className={s.content}>
                 <Typography gutterBottom variant="h5" component="div">
@@ -63,7 +53,6 @@ const Card = ({
               <ArrowForwardIosOutlinedIcon className={s.arrow} />
             </div>
           </CardActionArea>
-          {/* </div> */}
         </a>
       </Link>
     </div>

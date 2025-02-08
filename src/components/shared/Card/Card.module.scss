@@ -4,24 +4,20 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
-  // padding-left: 16px;
-  // height: 100%;
 
   &:hover {
-    transform: translateY(-10px); /* Лёгкая анимация при наведении */
+    transform: translateY(-10px);
   }
-
   .content {
     color: white;
     background-color: rgb(35, 43, 47);
-    // padding: 16px;
+    text-decoration: none;
+    margin-top: 0;
   }
   img {
-    // width: 100%;
     max-width: 100%;
     height: auto;
-    // height: 200px;
-    // display: block;
+    display: block;
   }
   .brg__button {
     border-radius: 0px 0px 10px 10px;
@@ -32,7 +28,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    // margin-top: auto;
     padding: 8px;
     .text {
       color: black;

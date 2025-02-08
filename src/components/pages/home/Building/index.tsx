@@ -21,58 +21,52 @@ import charactersParty1 from '@/public/images/charactersParty1.jpeg';
 const Building = () => {
   // const cardImage = buildingImages[Math.floor(getRandomArbitrary(0, 4))];
   return (
-    <div className={s.building__page}>
-      <div className={s.container}>
-        {/* <div className={s.text}> */}
-        <h1>Mетод создания персоонажа</h1>
-        <p>Выбирите как вы хотите создать своего персоонажа</p>
-        {/* </div> */}
-        {/* <div className={s.containe}> */}
-        <div className={s.card}>
-          <div className={s.content}>
-            <Card
-              image={charactersParty1}
-              title={'Классика'}
-              description={'Создай персоонажа используя пошаговый подход'}
-              textButton={'Создать'}
-              alt={'Клфссическое создание персоонажа'}
-              pathRouter={'/builder'}
-            />
-          </div>
-          <div>
-            <Card
-              image={charactersParty1}
-              title={'Классика'}
-              description={'Создай персоонажа используя пошаговый подход'}
-              textButton={'Создать'}
-              alt={'Клфссическое создание персоонажа'}
-              pathRouter={'/builder'}
-            />
-          </div>
-          <div>
-            <Card
-              image={charactersParty1}
-              title={'Классика'}
-              description={'Создай персоонажа используя пошаговый подход'}
-              textButton={'Создать'}
-              alt={'Клфссическое создание персоонажа'}
-              pathRouter={'/builder'}
-            />
-          </div>
-          <div>
-            <Card
-              image={charactersParty1}
-              title={'Классика'}
-              description={'Создай персоонажа используя пошаговый подход'}
-              textButton={'Создать'}
-              alt={'Клфссическое создание персоонажа'}
-              pathRouter={'/builder'}
-            />
-          </div>
+    <div className={s.container}>
+      <h1>Mетод создания персоонажа</h1>
+      <p>Выбирите как вы хотите создать своего персоонажа</p>
+      <div className={s.card}>
+        <div>
+          <Card
+            image={charactersParty1}
+            title={'Классика'}
+            description={'Создай персоонажа используя пошаговый подход'}
+            textButton={'Создать'}
+            alt={'Клфссическое создание персоонажа'}
+            pathRouter={'/builder'}
+          />
+        </div>
+        <div>
+          <Card
+            image={charactersParty1}
+            title={'Классика'}
+            description={'Создай персоонажа используя пошаговый подход'}
+            textButton={'Создать'}
+            alt={'Клфссическое создание персоонажа'}
+            pathRouter={'/builder'}
+          />
+        </div>
+        <div>
+          <Card
+            image={charactersParty1}
+            title={'Классика'}
+            description={'Создай персоонажа используя пошаговый подход'}
+            textButton={'Создать'}
+            alt={'Клфссическое создание персоонажа'}
+            pathRouter={'/builder'}
+          />
+        </div>
+        <div>
+          <Card
+            image={charactersParty1}
+            title={'Классика'}
+            description={'Создай персоонажа используя пошаговый подход'}
+            textButton={'Создать'}
+            alt={'Клфссическое создание персоонажа'}
+            pathRouter={'/builder'}
+          />
         </div>
       </div>
     </div>
-    // </div>
   );
 };
 

@@ -1,5 +1,3 @@
-// import {Typography, Box, Container} from '@mui/material';
-
 import s from './Home.module.scss';
 
 import Greetings from '@/components/pages/home/Greetings';

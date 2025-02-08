@@ -1,56 +1,17 @@
 .home {
   display: flex;
-  // grid-template-rows: 20px 1fr 20px;
   flex-direction: column;
   align-items: center;
   justify-items: center;
   min-height: 100vh;
-  // padding: 2rem 2rem 5rem;
-  // gap: 4rem;
+
   font-family: var(--font-geist-sans);
 
   @media (min-width: 640px) {
-    // padding: 5rem;
   }
 }
-// .home__text {
-//   margin-top: 200px;
-//   text-align: center;
-// }
 
-// .main__text {
-//   color: #222222;
-//   font-size: 72px;
-// }
-
-// .text {
-//   margin-top: 20px;
-//   color: #666666;
-// }
-
-// .layout {
-//   display: flex;
-//   flex-direction: column;
-//   min-height: 100vh;
-//   padding: 0;
-//   .main_content {
-//     flex: 1;
-//     // padding: 20px;
-//   }
-// }
 .greetings,
 .building {
   margin-top: 64px;
-  // @media (min-width: 1024px) {
-  //   margin-top: 48px;
-  // }
-  // @media (min-width: 768px) {
-  //   margin-top: 36px;
-  // }
-  // @media (min-width: 480px) {
-  //   margin-top: 24px;
-  // }
-  // @media (min-width: 320px) {
-  //   margin-top: 40px;
-  // }
 }
