@@ -43,7 +43,9 @@ const Card = ({
                 <Typography gutterBottom variant="h5" component="div">
                   {title}
                 </Typography>
-                <Typography variant="body2">{description}</Typography>
+                <Typography variant="body2" className={s.description}>
+                  {description}
+                </Typography>
               </CardContent>
             </CardActionArea>
           </MuiCard>
