@@ -11,7 +11,7 @@ const Header = () => {
         </Link>
         <ol className={s.nav_link}>
           <li>
-            <Link href="/builder">Создать персонажа</Link>
+            <Link href="/builder/class">Создать персонажа</Link>
           </li>
           <li>
             <Link href="/profile">Личный кабинет</Link>

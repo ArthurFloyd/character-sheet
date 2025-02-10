@@ -32,7 +32,7 @@ const Building = () => {
             description={'Создай персоонажа используя пошаговый подход'}
             textButton={'Создать'}
             alt={'Клфссическое создание персоонажа'}
-            pathRouter={'/builder'}
+            pathRouter={'/builder/class'}
           />
         </div>
         <div>
@@ -44,7 +44,7 @@ const Building = () => {
             }
             textButton={'Начать просмотр'}
             alt={'Клфссическое создание персоонажа'}
-            pathRouter={'/builder'}
+            pathRouter={'/builder/class'}
           />
         </div>
         <div>
@@ -55,7 +55,7 @@ const Building = () => {
             }
             textButton={'Создать'}
             alt={'Клфссическое создание персоонажа'}
-            pathRouter={'/builder'}
+            pathRouter={'/builder/class'}
           />
         </div>
         <div>
@@ -66,7 +66,7 @@ const Building = () => {
             }
             textButton={'Создать'}
             alt={'Клфссическое создание персоонажа'}
-            pathRouter={'/builder'}
+            pathRouter={'/builder/class'}
           />
         </div>
       </div>
