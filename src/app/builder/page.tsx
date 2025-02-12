@@ -32,14 +32,14 @@ const Builder = () => {
       <header className={s.header}>
         <div className={s.topBar}>
           {/* Логотип и имя персонажа */}
-          <div className={s.left}>
-            {/* <Settings className={s.icon} /> */}
-            <div>
-              <h1 className={s.title}>Конструктор персонажа</h1>
-              <p className={s.subtitle}>тут будет имя и аватар</p>
-            </div>
-            {/* <HelpCircle className={s.helpIcon} /> */}
-          </div>
+          {/* <div className={s.left}> */}
+          {/* <Settings className={s.icon} /> */}
+          {/* <div> */}
+          <h1 className={s.title}>Конструктор персонажа</h1>
+          <p className={s.subtitle}>тут будет имя и аватар</p>
+          {/* </div> */}
+          {/* <HelpCircle className={s.helpIcon} /> */}
+          {/* </div> */}
 
           {/* Иконка меню справа */}
           {/* <FileText className={s.menuIcon} /> */}
