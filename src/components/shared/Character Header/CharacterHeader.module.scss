@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 30px 20px;
+  max-width: 600px;
+  margin: auto;
+  .button {
+    min-width: 40px;
+  }
+
+  .avatar__container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .avatar {
+      width: 50px;
+      height: 50px;
+      border: 2px dashed black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .input__name {
+      margin-left: 5px;
+    }
+  }
+}
