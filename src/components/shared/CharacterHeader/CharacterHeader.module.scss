@@ -1,7 +1,7 @@
 .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   border-bottom: 1px solid #ccc;
   padding: 30px 20px;
   max-width: 600px;
@@ -15,16 +15,21 @@
     align-items: center;
     gap: 10px;
     .avatar {
-      width: 50px;
-      height: 50px;
+      width: 100px;
+      height: 100px;
       border: 2px dashed black;
       display: flex;
       align-items: center;
       justify-content: center;
       position: relative;
     }
-    .input__name {
-      margin-left: 5px;
+    .input {
+      p {
+        font-weight: bold;
+      }
+      .input__name {
+        // margin-left: 5px;
+      }
     }
   }
 }

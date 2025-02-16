@@ -7,6 +7,10 @@ import {usePathname} from 'next/navigation';
 // import {Settings} from '@mui/icons-material';
 
 import s from './Builder.module.scss';
+import {Button} from '@mui/material';
+
+import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutlined';
+import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 
 const tabs = [
   // {id: 'home', label: 'Дом', path: '/'},
