@@ -22,13 +22,11 @@
       align-items: center;
       justify-content: center;
       position: relative;
+      cursor: pointer;
     }
     .input {
       p {
         font-weight: bold;
-      }
-      .input__name {
-        // margin-left: 5px;
       }
     }
   }

@@ -12,7 +12,6 @@ const CharacterHeader = () => {
 
   return (
     <div className={s.container}>
-      {/* Аватар + Имя */}
       <div className={s.avatar__container}>
         <button className={s.avatar}>
           <Add />
@@ -27,9 +26,6 @@ const CharacterHeader = () => {
             onChange={(e) => setCharacterName(e.target.value)}
             className={s.input__name}
           />
-          {/* <div style={{fontSize: '12px', color: 'gray', cursor: 'pointer'}}>
-            SHOW SUGGESTIONS
-          </div> */}
         </div>
       </div>
     </div>
