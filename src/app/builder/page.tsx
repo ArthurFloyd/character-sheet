@@ -1,19 +1,11 @@
 'use client';
 
 import Link from 'next/link';
-
 import {usePathname} from 'next/navigation';
 
 import s from './Builder.module.scss';
 
-const tabs = [
-  {id: 'class', label: 'Класс', path: '/class'},
-  {id: 'background', label: 'Предыстория', path: '/background'},
-  {id: 'species', label: 'Вид', path: '/species'},
-  {id: 'abilities', label: 'Способности', path: '/abilities'},
-  {id: 'equipment', label: 'Снаряжение', path: '/equipment'},
-  {id: 'next', label: 'Что дальше?', path: '/next'},
-];
+import {navigationTabs} from '@/constants/constants';
 
 const Builder = () => {
   const pathname = usePathname();
@@ -27,7 +19,7 @@ const Builder = () => {
         </div>
 
         <nav className={s.navbar}>
-          {tabs.map((tab) => (
+          {navigationTabs.map((tab) => (
             <Link
               key={tab.id}
               href={`/builder${tab.path}`}
