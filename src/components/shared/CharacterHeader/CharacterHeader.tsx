@@ -7,13 +7,15 @@ import s from './CharacterHeader.module.scss';
 import {TextField} from '@mui/material';
 import {Add} from '@mui/icons-material';
 
+import AvatarPopup from '../AvatarPopup/AvatarPopup';
+
 const CharacterHeader = () => {
   const [characterName, setCharacterName] = useState('Character Name');
 
   return (
     <div className={s.container}>
       <div className={s.avatar__container}>
-        <button className={s.avatar}>
+        <button className={s.avatar} onClick={() => console.log('open popup')}>
           <Add />
         </button>
         <div className={s.input}>
@@ -28,6 +30,7 @@ const CharacterHeader = () => {
           />
         </div>
       </div>
+      <AvatarPopup />
     </div>
   );
 };
